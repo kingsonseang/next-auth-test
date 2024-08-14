@@ -56,6 +56,7 @@ export function TrackingAndRates() {
                 {Array.from({ length: trackingIdLenght }).map((_, index) => (
                   <Input
                     id={`trackingId[${index}]`}
+                    key={`trackingId[${index}]`}
                     placeholder="Tracking Number"
                   />
                 ))}
