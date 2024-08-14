@@ -17,7 +17,7 @@ export default function Page() {
               "after:opacity-0 hover:after:opacity-100 after:translate-z-[-100%,_0,_0] hover:after:translate-z-[0,_0,_0]",
             )}
           >
-            Paranoma
+            FastBird
           </Link>
           , <br />
           Sign In to Continue.

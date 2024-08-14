@@ -1,5 +1,5 @@
 import Image from "next/image";
-import chrysalis_photo from "@/public/chrysalis-photo.jpg";
+import container_ship from "@/public/The Future of Container Ships.png";
 
 export default function AuthLayout({
   children,
@@ -11,7 +11,7 @@ export default function AuthLayout({
       <div className="basis-[43%] relative hidden lg:block">
         <Image
           alt="Sign in hero image"
-          src={chrysalis_photo}
+          src={container_ship}
           placeholder="blur"
           quality={100}
           fill

@@ -54,7 +54,7 @@ export function CredentailsSignIn() {
             className="p-0 h-auto font-light text-sm"
             variant="link"
           >
-            <Link href="/auth/sign-up">Forget Password?</Link>
+            <Link href="/auth/forgot-password">Forget Password?</Link>
           </Button>
         </div>
       </div>
