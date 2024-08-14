@@ -5,9 +5,9 @@ import "./globals.css";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next Auth Test",
+  title: "FastBird Logistics",
   description:
-    "Sign In Page by Kawsar Ahmed - https://dribbble.com/shots/20319372-Sign-In-Page",
+    "Reliable and efficient logistics solutions for businesses of all sizes. We specialize in fast and secure shipping, real-time tracking, and comprehensive supply chain management to keep your business moving forward.",
 };
 
 export default function RootLayout({

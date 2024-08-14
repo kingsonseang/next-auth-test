@@ -1,5 +1,5 @@
 import Image from "next/image";
-import chrysalis_photo from "../../public/chrysalis-photo.jpg";
+import chrysalis_photo from "@/public/chrysalis-photo.jpg";
 
 export default function AuthLayout({
   children,
@@ -10,7 +10,7 @@ export default function AuthLayout({
     <section className="flex p-4 gap-12 min-h-screen">
       <div className="basis-[43%] relative hidden lg:block">
         <Image
-          alt="Mountains"
+          alt="Sign in hero image"
           src={chrysalis_photo}
           placeholder="blur"
           quality={100}

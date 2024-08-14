@@ -4,12 +4,12 @@ import dayjs from "dayjs";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-50 py-16">
-      <div className="max-w-screen-2xl mx-auto space-y-16">
-        <div className="grid grid-cols-5 gap-6">
+    <footer className="bg-teal-950 text-white py-12 lg:py-16">
+      <div className="max-w-screen-2xl mx-auto space-y-16 px-4">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
           <div className="space-y-2.5">
             <div>
-              <h3 className="text-gray-700">Help Center</h3>
+              <h3 className="text-white/40">Help Center</h3>
             </div>
             <div className="grid space-y-4 xl:text-lg">
               <Link href="/">Resources</Link>
@@ -20,7 +20,7 @@ export function Footer() {
           </div>
           <div className="space-y-2.5">
             <div>
-              <h3 className="text-gray-700">Our Division</h3>
+              <h3 className="text-white/40">Our Division</h3>
             </div>
             <div className="grid space-y-4 xl:text-lg">
               <Link href="/">Logistics Hub</Link>
@@ -29,9 +29,9 @@ export function Footer() {
               <Link href="/">Technology solutions</Link>
             </div>
           </div>
-          <div className="col-start-5 space-y-2.5">
+          <div className="lg:col-start-5 space-y-2.5">
             <div>
-              <h3 className="text-gray-700">Contact</h3>
+              <h3 className="text-white/40">Contact</h3>
             </div>
             <div className="grid space-y-4 xl:text-lg">
               <Link
@@ -102,9 +102,9 @@ export function Footer() {
         </div>
 
         <Separator className="h-[1px] bg-gray-400" />
-        <div className="flex flex-col lg:flex-row justify-between items-center">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
           <Link href="/">Privacy & Terms</Link>
-          <Link href="/">© {dayjs().year()} next-auth-test</Link>
+          <Link href="/">© {dayjs().year()} FastBird Logistics Inc.</Link>
           <Link href="/">Contact us</Link>
         </div>
       </div>

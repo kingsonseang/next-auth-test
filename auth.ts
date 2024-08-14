@@ -48,8 +48,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   callbacks: {
     authorized({ request, auth }) {
       const { pathname } = request.nextUrl;
+
       if (pathname === "/dashboard") return Boolean(auth);
-      if (pathname.split("/").includes("auth")) return !Boolean(auth);
+      if (pathname.split("/").includes("auth") && Boolean(auth))
+        return Response.redirect(new URL("/", request.nextUrl));
       return true;
     },
   },

@@ -1,14 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
-import Link from "next/link";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useFormState } from "react-dom";
-import { signIn } from "@/auth";
 import { authenticateUser } from "@/actions/auth";
 
 export function CredentailsSignIn() {
+  const [ref] = useAutoAnimate<HTMLElement>();
   const [errorMessage, formAction, isPending] = useFormState(
     authenticateUser,
     undefined,
@@ -16,7 +17,7 @@ export function CredentailsSignIn() {
 
   return (
     <form action={formAction} className="space-y-16">
-      <div className="space-y-4">
+      <div ref={ref} className="space-y-4">
         {errorMessage && (
           <div className="flex items-center gap-2 text-red-500">
             <svg
