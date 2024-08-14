@@ -29,7 +29,7 @@ export async function Nav() {
             />
           </Link>
 
-          <div className="flex-1 flex items-center justify-center space-x-8">
+          <div className="hidden lg:flex flex-1 items-center justify-center space-x-8">
             {Object.entries(links).map(([label, href]) => (
               <NavLink href={href} key={href}>
                 {label}
