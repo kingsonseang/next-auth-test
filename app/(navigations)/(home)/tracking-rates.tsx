@@ -12,9 +12,10 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Package2 } from "lucide-react";
+import { Package2, Truck } from "lucide-react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export function TrackingAndRates() {
   const [ref] = useAutoAnimate<HTMLElement>();
@@ -44,7 +45,7 @@ export function TrackingAndRates() {
               <Package2 size={16} /> <span>Tracking Package</span>
             </TabsTrigger>
             <TabsTrigger className="flex space-x-1.5 h-full" value="rates">
-              <Package2 size={16} /> <span>Shipping Rates</span>
+              <Truck size={16} /> <span>Shipping Rates</span>
             </TabsTrigger>
           </TabsList>
         </CardTitle>
@@ -65,7 +66,10 @@ export function TrackingAndRates() {
               <p className="text-sm text-gray-500">
                 Available up to 10 tracking number,{" "}
                 <span
-                  className="text-base text-gray-900 cursor-pointer"
+                  className={cn(
+                    "text-base text-gray-900 cursor-pointer transition-colors ease-linear duration-200",
+                    trackingIdLenght === 10 && "opacity-40",
+                  )}
                   onClick={addTrackingInput}
                 >
                   Add New Input

@@ -39,7 +39,7 @@ export function CredentailsSignIn() {
         )}
         <div className="space-y-6">
           <div className="space-y-3">
-            <Label>Email</Label>
+            <Label>Email or Username</Label>
             <Input name="username" type="text" minLength={6} />
           </div>
           <div className="space-y-3">

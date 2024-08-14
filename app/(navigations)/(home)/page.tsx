@@ -21,12 +21,12 @@ export default function Home() {
             className="z-[-1] w-full"
           />
 
-          <div className="flex-1 flex flex-col lg:flex-row gap-12 p-4 pt-20 lg:px-10 lg:py-20 bg-black/10">
+          <div className="flex-1 flex flex-col lg:flex-row gap-12 p-4 pt-20 lg:px-10 lg:py-20 bg-black/20">
             <div className="flex-1 flex flex-col justify-end space-y-5">
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl">
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
                 Navigating Logistics with a Focus on Timely Deliveries
               </h2>
-              <p className="font-light text-lg">
+              <p className="font-light text-lg xl:text-xl">
                 Experience flawless shipping solutions or your needs. We take
                 pride in delivering excellence with punctiality at the forefront
               </p>

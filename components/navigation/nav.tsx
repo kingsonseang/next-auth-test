@@ -20,7 +20,8 @@ import { getInitials } from "@/lib/utils";
 const links = {
   Home: "/",
   "About us": "/about",
-  Shipping: "/shipping",
+  "Product & Services": "/product-and-solution",
+  "Contact us": "/contact",
 } as const;
 
 export async function Nav() {
