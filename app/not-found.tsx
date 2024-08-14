@@ -21,8 +21,8 @@ export default function NotFound() {
         <div className="max-w-screen-sm m-auto flex-1 space-y-3 text-lg">
           <h1 className="text-6xl">Oops! Page Not Found</h1>
           <p className="text-neutral-500">
-            The page you're looking for doesn't seem to exist right now. You can
-            return to the{" "}
+            The page you&#39;re looking for doesn&#39;t seem to exist right now.
+            You can return to the{" "}
             <Link href="/" className="font-medium text-neutral-800">
               Home Page
             </Link>{" "}
