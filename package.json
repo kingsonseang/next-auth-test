@@ -1,6 +1,6 @@
 {
-  "name": "next-auth-test",
-  "description": "Sign In Page by Kawsar Ahmed - https://dribbble.com/shots/20319372-Sign-In-Page",
+  "name": "fastbird-logistics",
+  "description": "Logistics service website",
   "version": "0.0.1",
   "private": true,
   "scripts": {
