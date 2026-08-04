@@ -28,7 +28,7 @@ export default function Home() {
               </h2>
               <p className="font-light text-lg xl:text-xl">
                 Experience flawless shipping solutions or your needs. We take
-                pride in delivering excellence with punctiality at the forefront
+                pride in delivering excellence with punctiality at the forefront.
               </p>
             </div>
             <TrackingAndRates />
